@@ -39,3 +39,18 @@ func Fitness(text string, sample string) int {
 
 	return count
 }
+
+// Search ...
+func Search(variants []string, sample string) string {
+	minCount := len(sample)
+	result := ""
+	for i := 0; i < len(variants); i++ {
+		count := Fitness(variants[i], sample)
+		if count < minCount {
+			minCount = count
+			result = variants[i]
+		}
+	}
+
+	return result
+}

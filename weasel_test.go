@@ -46,3 +46,19 @@ func TestFitness_withNotEqualStrings(test *testing.T) {
 
 	assert.Equal(test, 2, result)
 }
+
+func TestSearch_withoutSample(test *testing.T) {
+	variants := []string{"o1e t2p 3hree", "o21 2wo t3ree", "15e 133 t34e1"}
+	sample := "one two three"
+	result := Search(variants, sample)
+
+	assert.Equal(test, "o1e t2p 3hree", result)
+}
+
+func TestSearch_withSample(test *testing.T) {
+	variants := []string{"one two three", "o21 2wo t3ree", "o5e 133 t34e1"}
+	sample := "one two three"
+	result := Search(variants, sample)
+
+	assert.Equal(test, sample, result)
+}
