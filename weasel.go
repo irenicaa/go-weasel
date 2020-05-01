@@ -17,3 +17,13 @@ func Mutate(text string, rate float64) string {
 
 	return textCopy
 }
+
+// Populate ...
+func Populate(text string, rate float64, count int) []string {
+	textGroup := []string{}
+	for i := 0; i < count; i++ {
+		textGroup = append(textGroup, Mutate(text, rate))
+	}
+
+	return textGroup
+}
