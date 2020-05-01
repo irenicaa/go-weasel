@@ -27,3 +27,15 @@ func Populate(text string, rate float64, count int) []string {
 
 	return textGroup
 }
+
+// Fitness ...
+func Fitness(text string, sample string) int {
+	count := 0
+	for i := 0; i < len(text); i++ {
+		if text[i] != sample[i] {
+			count++
+		}
+	}
+
+	return count
+}

@@ -30,3 +30,19 @@ func TestPopulate(test *testing.T) {
 	}
 	assert.Equal(test, wantText, gotText)
 }
+
+func TestFitness_withEqualStrings(test *testing.T) {
+	text := "text text1 text2"
+	sample := "text text1 text2"
+	result := Fitness(text, sample)
+
+	assert.Equal(test, 0, result)
+}
+
+func TestFitness_withNotEqualStrings(test *testing.T) {
+	text := "text text2 text3"
+	sample := "text text1 text2"
+	result := Fitness(text, sample)
+
+	assert.Equal(test, 2, result)
+}
