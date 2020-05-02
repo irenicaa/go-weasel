@@ -4,6 +4,7 @@ import "math/rand"
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
 
+// Initial ..
 func Initial(length int) string {
 	text := ""
 	for i := 0; i < length; i++ {

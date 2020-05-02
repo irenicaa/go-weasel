@@ -10,7 +10,7 @@ import (
 func TestInitial(test *testing.T) {
 	rand.Seed(1)
 
-	gotText := Inital(5)
+	gotText := Initial(5)
 
 	assert.Equal(test, "OPCLE", gotText)
 }
