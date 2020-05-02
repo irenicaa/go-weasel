@@ -4,7 +4,7 @@ import "math/rand"
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
 
-func Inital(length int) string {
+func Initial(length int) string {
 	text := ""
 	for i := 0; i < length; i++ {
 		text += string(alphabet[rand.Intn(len(alphabet))])

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestInital(test *testing.T) {
+func TestInitial(test *testing.T) {
 	rand.Seed(1)
 
 	gotText := Inital(5)
