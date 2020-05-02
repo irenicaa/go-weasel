@@ -7,6 +7,14 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+func TestInital(test *testing.T) {
+	rand.Seed(1)
+
+	gotText := Inital(5)
+
+	assert.Equal(test, "OPCLE", gotText)
+}
+
 func TestMutate(test *testing.T) {
 	rand.Seed(1)
 
