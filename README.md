@@ -49,4 +49,4 @@ Options:
 
 The MIT License (MIT)
 
-Copyright &copy; 2020 irenica
+Copyright &copy; 2021 irenica
