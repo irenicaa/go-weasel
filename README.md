@@ -2,7 +2,7 @@
 
 [![GoDoc](https://godoc.org/github.com/irenicaa/go-weasel?status.svg)](https://godoc.org/github.com/irenicaa/go-weasel)
 [![Go Report Card](https://goreportcard.com/badge/github.com/irenicaa/go-weasel)](https://goreportcard.com/report/github.com/irenicaa/go-weasel)
-[![Build Status](https://travis-ci.org/irenicaa/go-weasel.svg?branch=master)](https://travis-ci.org/irenicaa/go-weasel)
+[![Build Status](https://app.travis-ci.com/irenicaa/go-weasel.svg?branch=master)](https://app.travis-ci.com/irenicaa/go-weasel)
 [![codecov](https://codecov.io/gh/irenicaa/go-weasel/branch/master/graph/badge.svg)](https://codecov.io/gh/irenicaa/go-weasel)
 
 [Weasel program](https://en.wikipedia.org/wiki/Weasel_program).
